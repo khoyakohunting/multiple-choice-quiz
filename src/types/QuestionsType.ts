@@ -1,6 +1,6 @@
 export interface QuestionType {
   category?: string;
-  id?: string;
+  id: string;
   correctAnswer: string;
   incorrectAnswers: string[];
   question?: string;
@@ -9,6 +9,7 @@ export interface QuestionType {
   difficulty?: Difficulty;
   regions?: any[];
   isNiche?: boolean;
+  answers?: string[];
 }
 
 export enum Difficulty {
